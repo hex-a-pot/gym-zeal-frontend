@@ -1,0 +1,32 @@
+.about-container {
+  padding: 100px 0;
+  height: max-content;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:50px;
+}
+.about-title{
+    font-size: 60px;
+    text-align: center;
+}
+.training-tiles {
+  padding:20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+@media screen and (max-width : 600px)
+{
+  .training-tiles{
+    flex-direction: column;
+  }
+  .about-title{
+    font-size: 40px;
+    width: 90%;
+  }
+}

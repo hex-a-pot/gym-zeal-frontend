@@ -1,0 +1,27 @@
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.question {
+  cursor: pointer;
+  width: max-content;
+}
+.view {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  top: 0;
+}
+.view-arrow {
+  color: #39ff14;
+  transition: all 500ms ease;
+}
+.answer {
+  color: grey;
+}
+.line {
+  height: 1px;
+  background-color: #39ff14;
+}

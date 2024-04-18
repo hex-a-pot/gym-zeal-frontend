@@ -1,0 +1,48 @@
+.card-tile {
+  flex: 1;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  width: min-content;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 500ms ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.price-type {
+  font-size: 40px;
+  color: black;
+}
+.price > span {
+  font-size: 60px;
+  color: #39ff14;
+}
+.checklists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.trial {
+  width: 70%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,65 @@
+
+.training-hero-container {
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  gap:20px;
+  overflow: hidden;
+}
+.hero-information,
+.banner {
+  flex: 1;
+}
+.hero-information {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.tag {
+  width:max-content;
+  padding:10px;
+  border: 1px solid #39ff14;
+  border-radius: 40px;
+  height: calc(max-content + 10px);
+  text-align: center;
+}
+.hero-title {
+  font-size: 60px;
+}
+.information{
+  width: max-content;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: gray;
+}
+.checklists {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.banner{
+    width:50%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media screen and (max-width:600px){
+
+  .hero-title{
+    font-size: 40px;
+  }
+  .banner{
+    display: none;
+  }
+  .checklist{
+    font-size: 20px;
+  }
+}
+

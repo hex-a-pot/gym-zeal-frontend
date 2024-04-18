@@ -1,0 +1,79 @@
+.faq-container {
+  min-height: 80vh;
+  height: max-content;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap:40px;
+  padding:100px;
+}
+
+.img-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.circle{
+  width: 30px;
+  height: 30px;
+  background-color: #39ff14;
+  border-radius: 50%;
+}
+.circle:nth-child(2n)
+{
+  animation: pulse-even 2s ease infinite forwards;
+}
+.circle:nth-child(2n+1)
+{
+  animation: pulse-odd 2s ease 1s infinite forwards;
+}
+.info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.info-title{
+  font-size: 60px;
+}
+.questions-section{
+  display: flex;flex-direction: column;
+  gap:20px;
+}
+.more-enquiries{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.more-enquiries>a{
+color:#39ff14
+}
+@keyframes pulse-even {
+  50%{
+    background-color: white;
+  }
+}
+@keyframes pulse-odd {
+  50%{
+    background-color: white;
+  }
+}
+@media screen and (max-width : 600px)
+{
+  .faq-container{
+    flex-direction: column;
+  }
+  .info-title{
+    text-align: center;
+    font-size: 40px;
+  }
+  .circle:nth-child(2n){
+    display: none;
+  }
+}
