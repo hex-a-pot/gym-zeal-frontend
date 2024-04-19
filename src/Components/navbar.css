@@ -19,6 +19,7 @@ nav {
   gap: 10px;
   width: 100%;
   max-width: 1024px;
+  position: relative;
 }
 .logo {
   border: 1px solid #39ff14;
@@ -39,7 +40,8 @@ section.right {
   gap: 20px;
   width: max-content;
 }
-section.right > a {
+section.right > a,
+.options > a {
   color: white;
   text-decoration: none;
   transition: all 200ms ease;
@@ -48,9 +50,32 @@ section.right > a {
     font-weight: bold;
   }
 }
-@media screen and (max-width : 450px)
-{
-  section.right{
+.more {
+  font-size: 50px;
+  cursor: pointer;
+}
+section.mobile-menu {
+  display: none;
+}
+.options {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  top: 60px;
+  left:-10px;
+  height: 100vh;
+  width: 50vh;
+  font-size: 40px;
+  z-index:2;
+  overscroll-behavior: contain;
+}
+@media screen and (max-width: 450px) {
+  section.right {
     display: none;
+  }
+  section.mobile-menu {
+    display: inline;
   }
 }

@@ -40,10 +40,15 @@ function TrainingHero(props) {
           })}
         </div>
       </motion.div>
-      <motion.img initial = {leftAligned?{x:-300}:{x:300}}
-      whileInView={{x:0}}
-      viewport={{once:true}}
-      transition={{duration:1}} src={image} alt="" className="banner" />
+      <motion.img
+        initial={leftAligned ? { x: -300 } : { x: 300 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        src={image}
+        alt=""
+        className="banner"
+      />
     </div>
   );
 }
