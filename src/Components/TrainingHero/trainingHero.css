@@ -5,6 +5,7 @@
   align-items: center;
   gap:20px;
   overflow: hidden;
+  height: min-content;
 }
 .hero-information,
 .banner {
@@ -46,9 +47,11 @@
 }
 .banner{
     width:50%;
-    aspect-ratio: 3/4;
+    height: min-content;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 10px;
+    
 }
 @media screen and (max-width:600px){
 

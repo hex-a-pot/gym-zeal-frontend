@@ -4,7 +4,7 @@ function Navbar({showBackground}) {
   return (
     <div
         className="nav-container"
-        style={showBackground ? { backgroundColor: "black" } : {}}
+        style={showBackground ? { backgroundColor: "rgba(0, 0, 0, 0.8)",backdropFilter:"blur(3px)",WebkitBackdropFilter:"blur(3px)" } : {}}
       >
         <nav>
           <section className="left">

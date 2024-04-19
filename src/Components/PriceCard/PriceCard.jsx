@@ -1,5 +1,6 @@
 import './priceCard.css'
 import { FaRegCheckCircle } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 function PriceCard({type}) {
   return (
@@ -12,7 +13,7 @@ function PriceCard({type}) {
             <div className="checklist"><FaRegCheckCircle /><span>Full gym access</span></div>
         </div>
         <div className="price-condition">Charges every {type === "month"?"month ":type === "quarter"?"3 months ":"6 months "}unless you cancel</div>
-        <button className="trial">Start 7 day free trial</button>
+        <motion.button className="trial" whileHover={{scale:1.1}} whileTap={{scale:0.95}}transition={{duration:0.5}}>Start 7 day free trial</motion.button>
     </div>
   )
 }
