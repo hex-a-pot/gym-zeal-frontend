@@ -13,9 +13,10 @@ function Contact() {
       <div className="contact-description">
         <Typing
           text={
-            "Gym Zeal was started by Rohit,Surya and Manoj in 2021. It's our mission to help people in Hazaribagh get fit, stay helathy, and live life on their terms witjout fitness being an obstacle."
+            "Gym Zeal was started by Rohit,Surya and Manoj in 2021. It's our mission to help people in Hazaribagh get fit, stay helathy, and live life on their terms without fitness being an obstacle. || जय श्री राम ||"
           }
           splitDelimitter={" "}
+          once
         />
       </div>
       <MakeVisible>
@@ -32,13 +33,17 @@ function Contact() {
             ></textarea>
             <button className="submit">Submit</button>
           </form>
+          
           <div className="banner-container">
+          
             <img
               src="https://images.pexels.com/photos/2480122/pexels-photo-2480122.jpeg"
               alt=""
               className="founders-banner"
             />
+            
           </div>
+          
         </div>
       </MakeVisible>
     </div>

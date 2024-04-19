@@ -2,6 +2,7 @@ import "./trainingHero.css";
 import { FaRegCheckCircle } from "react-icons/fa";
 import React from "react";
 import { motion } from "framer-motion";
+import Typing from "../../MotionUtitlities/Typing/Typing";
 
 function TrainingHero(props) {
   const { leftAligned, title, image, checklists,tag,information} = props;
@@ -20,7 +21,7 @@ function TrainingHero(props) {
     >
       <div className="hero-information">
         <div className="tag">{tag}</div>
-        <h1 className="hero-title">{title}</h1>
+        <h1 className="hero-title"><Typing text={title} splitDelimitter={" "} once/></h1>
         {information && <div className="information">{information}</div> }
         <div className="checklists">
           {checklists.map((listItem, i) => {

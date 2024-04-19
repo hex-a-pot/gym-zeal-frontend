@@ -12,17 +12,15 @@ function Pricing() {
           splitDelimitter={" "}
         />
       </div>
-      <div className="price-cards">
-        <MakeVisible>
+      <MakeVisible>
+        <div className="price-cards">
           <PriceCard type={"month"} />
-        </MakeVisible>
-        <MakeVisible>
+
           <PriceCard type={"quarter"} />
-        </MakeVisible>
-        <MakeVisible>
-        <PriceCard type={"6months"} />
-        </MakeVisible>
-      </div>
+
+          <PriceCard type={"6months"} />
+        </div>
+      </MakeVisible>
     </div>
   );
 }

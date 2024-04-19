@@ -9,8 +9,6 @@
   padding: 10px;
   transition: all 500ms ease;
   color: #39ff14;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 nav {

@@ -5,7 +5,7 @@
   align-items: center;
   gap:20px;
   overflow: hidden;
-  height: min-content;
+  height: max-content;
 }
 .hero-information,
 .banner {
@@ -14,7 +14,8 @@
 .hero-information {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  height:calc(max-content + 200px);
+  gap: 40px;
 }
 .tag {
   width:max-content;
@@ -47,7 +48,7 @@
 }
 .banner{
     width:50%;
-    height: min-content;
+    height: inherit;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 10px;

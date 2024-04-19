@@ -19,6 +19,7 @@
 .price-type {
   font-size: 40px;
   color: black;
+  word-wrap:unset;
 }
 .price > span {
   font-size: 60px;
