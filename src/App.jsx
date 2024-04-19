@@ -10,7 +10,7 @@ function App() {
   // For Scrolling and setting the navbar bg
   const TOP_OFFSET = 50;
   const [showBackground, setShowBackground] = useState();
-  // For switching to mobile resolution
+  // For switching to mobile
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
