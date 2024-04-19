@@ -1,12 +1,13 @@
 import TrainingHero from "../../Components/TrainingHero/TrainingHero";
 import TrainingTile from "../../Components/TrainingTile/TrainingTile";
+import Typing from "../../MotionUtitlities/Typing/Typing";
 import "./about.css";
 import React from "react";
 
 function About() {
   return (
     <div className="about-container">
-      <h1 className="about-title">We offer something for everybody</h1>
+      <h1 className="about-title"><Typing text = {"Crush your Health and fitness goals in no time"}splitDelimitter={" "}/></h1>
       <div className="training-tiles">
         <TrainingTile
           type={"CrossFit Group Classes"}

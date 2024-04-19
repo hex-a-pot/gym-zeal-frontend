@@ -1,22 +1,13 @@
 import "./home.css";
 import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Typing from "../../MotionUtitlities/Typing/Typing";
 
 function Home() {
-  const title = "Crush your Health and fitness goals in no time".split(" ");
   return (
     <div className="home-container">
       <h2 className="title">
-        {title.map((el, i) => (
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: i / 10 }}
-            key={i}
-          >
-            {el}{" "}
-          </motion.span>
-        ))}
+        <Typing text={"Crush your Health and fitness goals in no time"} splitDelimitter={" "}/>
       </h2>
       <p className="description">
         It doesn't matter if your goal is to get stronger,burn fat,or to just

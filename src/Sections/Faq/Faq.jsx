@@ -1,4 +1,5 @@
 import Question from "../../Components/Question/Question";
+import Typing from "../../MotionUtitlities/Typing/Typing";
 import "./faq.css";
 
 function Faq() {
@@ -86,7 +87,7 @@ function Faq() {
         <span className="circle"></span>
       </div>
       <div className="info-section">
-        <div className="info-title">FAQ</div>
+        <div className="info-title"><Typing text={"FAQ"} splitDelimitter = {""}/></div>
         <section className="questions-section">
           <Question
             question={"Can I change my training routine anytime?"}
