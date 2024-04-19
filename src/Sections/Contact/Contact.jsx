@@ -8,16 +8,14 @@ function Contact() {
       <span className="contact-label">About Gym Zeal</span>
       <div className="contact-intro">
         <span>Hi, We're a local MultiFunctional gym in</span>
-        <div className="location">Kesura, Hazaribagh</div>
+        <div className="location">
+          <Typing text={"Kesura, Hazaribagh"} splitDelimitter={" "} once />
+        </div>
       </div>
       <div className="contact-description">
-        <Typing
-          text={
-            "Gym Zeal was started by Rohit,Surya and Manoj in 2021. It's our mission to help people in Hazaribagh get fit, stay helathy, and live life on their terms without fitness being an obstacle. || जय श्री राम ||"
-          }
-          splitDelimitter={" "}
-          once
-        />
+        Gym Zeal was started by Rohit,Surya and Manoj in 2021. It's our mission
+        to help people in Hazaribagh get fit, stay helathy, and live life on
+        their terms without fitness being an obstacle. <div>|| जय श्री राम ||</div>
       </div>
       <MakeVisible>
         <div className="form-container">
@@ -33,17 +31,14 @@ function Contact() {
             ></textarea>
             <button className="submit">Submit</button>
           </form>
-          
+
           <div className="banner-container">
-          
             <img
               src="https://images.pexels.com/photos/2480122/pexels-photo-2480122.jpeg"
               alt=""
               className="founders-banner"
             />
-            
           </div>
-          
         </div>
       </MakeVisible>
     </div>

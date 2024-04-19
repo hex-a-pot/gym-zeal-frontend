@@ -27,7 +27,7 @@ function Home() {
             {[1, 2, 3, 4, 5].map((el, i) => (
               <motion.span
                 key={i}
-                initial={{ opacity: 0, color: "white",scale:0}}
+                initial={{ opacity: 0, color: "#FFFF",scale:0}}
                 whileInView={{ opacity: 1, color: "#FFDF00",scale:1}}
                 transition={{ duration : 1, delay: i/10}}
               >
