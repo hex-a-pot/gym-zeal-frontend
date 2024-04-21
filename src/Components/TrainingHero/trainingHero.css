@@ -5,6 +5,8 @@
   gap: 20px;
   overflow: hidden;
   height: max-content;
+  min-height: 120vh;
+  background-repeat: no-repeat;
 }
 .hero-information,
 .banner {
@@ -53,6 +55,8 @@
   border-radius: 10px;
 }
 @media screen and (max-width: 600px) {
+  .training-hero-container{
+  }
   .hero-title {
     font-size: 40px;
   }
@@ -61,5 +65,8 @@
   }
   .checklist {
     font-size: 20px;
+  }
+  #video-player{
+    display: none;
   }
 }

@@ -58,6 +58,7 @@ function About() {
             "Fun is guaranteed",
           ]}
           tag={"Group CrossFit Classes"}
+          videoId={"https://videos.pexels.com/video-files/4761415/4761415-sd_640_338_25fps.mp4"}
         />
       </div>
 
@@ -76,6 +77,7 @@ function About() {
             "Dumbells ranging 2.5kgs - 30kgs",
           ]}
           tag={"Strength Training"}
+          videoId={"https://videos.pexels.com/video-files/5320010/5320010-sd_640_360_25fps.mp4"}
         />
       </div>
       <div id="personal-training">
@@ -93,6 +95,7 @@ function About() {
             "Nutrition planning",
           ]}
           tag={"Personal Training"}
+          videoId={"https://videos.pexels.com/video-files/6739920/6739920-hd_1920_1080_25fps.mp4"}
         />
       </div>
       <div id="events">
@@ -108,6 +111,7 @@ function About() {
             "Summer potlucks and games",
           ]}
           tag={"Member Only Events"}
+          videoId={"https://videos.pexels.com/video-files/5752175/5752175-sd_640_360_25fps.mp4"}
         />
       </div>
     </div>
