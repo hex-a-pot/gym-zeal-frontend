@@ -71,7 +71,7 @@ section.mobile-menu {
   z-index:2;
   overscroll-behavior: contain;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   section.right {
     display: none;
   }
