@@ -5,7 +5,7 @@
   gap: 20px;
   overflow: hidden;
   height: max-content;
-  min-height: 120vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
 }
 .hero-information,
