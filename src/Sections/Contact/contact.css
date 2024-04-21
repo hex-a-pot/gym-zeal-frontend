@@ -30,26 +30,26 @@
   text-align: center;
 }
 .form-container {
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  gap:20px;
+
+  gap: 20px;
   width: 80%;
 }
 .contact-us-form {
-  flex:1;
+  flex: 2.5;
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 20px;
-  
 }
-.form-intro{
+.form-intro {
   text-align: center;
 }
-input,textarea {
+input,
+textarea {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   border: none;
@@ -57,45 +57,63 @@ input,textarea {
   outline: none;
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
-  padding:10px;
+  padding: 10px;
 }
-.submit{
+.submit {
   width: 70%;
   padding: 10px;
   border-radius: 40px;
-  margin:0 auto;
+  margin: 0 auto;
   font-size: 20px;
   color: white;
-  border:1px solid #39ff14;
+  border: 1px solid #39ff14;
   background-color: inherit;
   cursor: pointer;
   transition: all 500ms ease;
-  &:hover{
-    transform:scale(1.1)
+  &:hover {
+    transform: scale(1.1);
   }
 }
-.banner-container{
-  flex:1;
-  width:100%;
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #39ff14;
 }
-.founders-banner{
+.icon {
+  color: #39ff14;
+  animation: translate 1s linear infinite backwards;
+}
+.banner-container {
+  flex: 1;
+  width: 100%;
+}
+.founders-banner {
   width: inherit;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
-@media screen and (max-width:600px){
-  .contact-intro{
+@media screen and (max-width: 600px) {
+  .contact-intro {
     font-size: 40px;
   }
-  .contact-us-form{
-    padding:40px 20px;
-    background:linear-gradient( rgba(0,0,0,0.9), rgba(0,0,0,0.6) ),url("https://images.pexels.com/photos/2480122/pexels-photo-2480122.jpeg");
+  .contact-us-form {
+    padding: 40px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+      url("https://images.pexels.com/photos/2480122/pexels-photo-2480122.jpeg");
     background-position: 50%;
     background-size: cover;
-    border-radius:10px;
+    border-radius: 10px;
   }
-  .banner-container{
-    display:none;
+  .banner-container {
+    display: none;
+  }
+}
+
+@keyframes translate {
+  to {
+    transform: translateX(-10px);
   }
 }
