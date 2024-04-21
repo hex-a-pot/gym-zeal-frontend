@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./app.css"
 import About from "./Sections/About/About";
 import Contact from "./Sections/Contact/Contact";
 import Faq from "./Sections/Faq/Faq";
