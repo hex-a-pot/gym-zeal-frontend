@@ -43,14 +43,14 @@ function Contact() {
         <div className="form-container">
           <form className="contact-us-form" onSubmit={handleSubmit}>
             <span className="form-intro">Feel free to drop a message</span>
-            <input type="text" placeholder="Name" name="Name" />
-            <input type="text" placeholder="Phone number" name="Phone" />
+            <input type="text" placeholder="Name" name="Name" required/>
+            <input type="text" placeholder="Phone number" name="Phone" required/>
             <textarea
               name="message"
               rows="10"
               placeholder="Write your message here..."
             ></textarea>
-            <button className="submit">
+            <button className="submit" type="submit">
               {result ? (
                 <div className="result-container">
                   {result === "Sending..." ? (
