@@ -95,7 +95,7 @@ function About() {
             "Nutrition planning",
           ]}
           tag={"Personal Training"}
-          videoId={"https://videos.pexels.com/video-files/6740240/6740240-sd_640_360_25fps.mp4"}
+          videoId={"https://videos.pexels.com/video-files/5319760/5319760-sd_640_360_25fps.mp4"}
         />
       </div>
       <div id="events">
