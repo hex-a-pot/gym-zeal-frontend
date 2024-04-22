@@ -74,6 +74,7 @@ function TrainingHero(props) {
         width="calc(50vw-80px)"
         height="400px"
         style={{ borderRadius: "10px" }}
+        controlsList="nodownload"
       >
         <source src={videoId} type="video/mp4" />
       </motion.video>

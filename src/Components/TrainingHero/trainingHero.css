@@ -58,7 +58,7 @@
   }
   #video-player {
     position: absolute;
-    left: -20px;
+    left: -300px;
     height: 100vh;
     width: unset;
     padding: none;
