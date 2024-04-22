@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import Typing from "../../MotionUtitlities/Typing/Typing";
 
 function TrainingHero(props) {
-  const { leftAligned, title, image, checklists, tag, information, videoId} = props;
+  const { leftAligned, title, image, checklists, tag, information, videoId } =
+    props;
   return (
     <div
       className="training-hero-container"
@@ -14,14 +15,14 @@ function TrainingHero(props) {
           ? {
               flexDirection: "row-reverse",
               background: `linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(${image})`,
-              backgroundRepeat:"no-repeat",
-              backgroundSize:"cover"
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }
           : {
               flexDirection: "row",
               background: `linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(${image})`,
-              backgroundRepeat:"no-repeat",
-              backgroundSize:"cover"
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }
       }
     >
@@ -66,17 +67,15 @@ function TrainingHero(props) {
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        autoPlay
+        autoPlay={"autoplay"}
+        preLoad="auto"
         loop
         muted
         width="calc(50vw-80px)"
         height="400px"
-        style={{borderRadius:"10px"}}
+        style={{ borderRadius: "10px" }}
       >
-        <source
-          src={videoId}
-          type="video/mp4"
-        />
+        <source src={videoId} type="video/mp4" />
       </motion.video>
     </div>
   );

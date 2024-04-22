@@ -9,6 +9,7 @@
   padding: 10px;
   transition: all 500ms ease;
   color: #39ff14;
+  z-index:999;
 }
 
 nav {
@@ -34,20 +35,28 @@ nav {
   font-weight: bold;
   cursor: pointer;
 }
-section.right {
+section.right,.links {
   display: flex;
   align-items: center;
   gap: 20px;
   width: max-content;
 }
-section.right > a,
-.options > a {
+section.middle>.links > a,
+.options > a,.whatsapp,.map-location {
   color: white;
   text-decoration: none;
   transition: all 200ms ease;
   &:hover {
     transform: scale(1.1);
     font-weight: bold;
+  }
+  
+}
+.whatsapp,.map-location{
+  transition: transform 500ms ease;
+  font-size: 20px;
+  &:hover{
+    transform: scale(2);
   }
 }
 .more {
@@ -72,10 +81,13 @@ section.mobile-menu {
   overscroll-behavior: contain;
 }
 @media screen and (max-width: 600px) {
-  section.right {
+  .links {
     display: none;
   }
   section.mobile-menu {
     display: inline;
+  }
+  .whatsapp,.map-location{
+    font-size: 20px;
   }
 }

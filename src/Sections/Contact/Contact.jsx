@@ -34,10 +34,9 @@ function Contact() {
         </div>
       </div>
       <div className="contact-description">
-        Gym Zeal was started by Rohit,Surya and Manoj in 2021. It's our mission
+        Gym Zeal was started by Rohit, Surya and Manoj in 2021. It's our mission
         to help people in Hazaribagh get fit, stay helathy, and live life on
-        their terms without fitness being an obstacle.{" "}
-        <div>|| जय श्री राम ||</div>
+        their terms without fitness being an obstacle.
       </div>
       <MakeVisible>
         <div className="form-container">

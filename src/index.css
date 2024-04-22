@@ -11,5 +11,5 @@ body{
     cursor: default;
     font-family: "Rubik", sans-serif;
     background-color: black;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
