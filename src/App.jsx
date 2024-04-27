@@ -5,6 +5,7 @@ import Faq from "./Sections/Faq/Faq";
 import Home from "./Sections/Home/Home";
 import Pricing from "./Sections/Pricing/Pricing";
 import Navbar from "./Components/Navbar";
+import Testimonials from "./Sections/Testimonials/Testimonials";
 function App() {
   // For Scrolling and setting the navbar bg
   const TOP_OFFSET = 50;
@@ -41,6 +42,9 @@ function App() {
         </div>
         <div id="faq">
           <Faq />
+        </div>
+        <div id="review">
+          <Testimonials />
         </div>
         <div id="contact">
           <Contact />

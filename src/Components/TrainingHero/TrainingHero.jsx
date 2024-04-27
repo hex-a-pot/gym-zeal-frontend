@@ -68,7 +68,7 @@ function TrainingHero(props) {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
         autoPlay={"autoplay"}
-        preLoad="auto"
+        preload="auto"
         loop
         muted
         width="calc(50vw-80px)"

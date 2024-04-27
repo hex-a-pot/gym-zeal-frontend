@@ -1,0 +1,99 @@
+.testimonial-container {
+  margin-top: 100px;
+  min-height: 100vh;
+  height: max-content;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/1855362/pexels-photo-1855362.jpeg?auto=compress&cs=tinysrgb&w=800");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+.wrapper {
+  padding: 80px 40px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.intro,
+.testimonial-cards {
+  flex: 1;
+}
+.apostropes {
+  position: absolute;
+  top: -40px;
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #39ff14;
+  font-size: 80px;
+}
+.apostropes > span {
+  transform: translateY(20px);
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 40px;
+}
+.intro-description {
+  font-size: 20px;
+  font-weight: normal;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.backward,
+.forward {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.testimonial-cards {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+@media screen and (max-width: 600px) {
+  .backward,.forward{
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .intro-description {
+    display: none;
+  }
+  .testimonial-cards {
+    height: 80vh;
+    width: 100vw;
+  }
+  .intro {
+    font-size: 20px;
+  }
+}
